@@ -1,0 +1,2681 @@
+{
+  "academia": {
+    "id": "ac-1",
+    "nome": "DomCore Gym",
+    "cidade": "Curitiba",
+    "estado": "PR",
+    "cnpj": "42.113.900/0001-55",
+    "plano_saas": "pro"
+  },
+  "unidades": [
+    {
+      "id": "un-1",
+      "academiaId": "ac-1",
+      "nome": "Unidade Centro",
+      "endereco": "R. XV de Novembro, 1200 - Centro, Curitiba/PR",
+      "capacidade": 260,
+      "catracas": 2
+    },
+    {
+      "id": "un-2",
+      "academiaId": "ac-1",
+      "nome": "Unidade Batel",
+      "endereco": "Av. do Batel, 850 - Batel, Curitiba/PR",
+      "capacidade": 180,
+      "catracas": 1
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "u-1",
+      "nome": "Lucas Garcia",
+      "email": "lucas@domcore.com.br",
+      "papel": "dono",
+      "unidadeId": "un-1",
+      "ativo": true
+    },
+    {
+      "id": "u-2",
+      "nome": "Marina Alves",
+      "email": "marina@domcore.com.br",
+      "papel": "recepcao",
+      "unidadeId": "un-1",
+      "ativo": true
+    },
+    {
+      "id": "u-3",
+      "nome": "Rafael Souza",
+      "email": "rafael@domcore.com.br",
+      "papel": "personal",
+      "unidadeId": "un-1",
+      "ativo": true
+    },
+    {
+      "id": "u-4",
+      "nome": "Camila Nunes",
+      "email": "camila@domcore.com.br",
+      "papel": "nutricionista",
+      "unidadeId": "un-2",
+      "ativo": true
+    },
+    {
+      "id": "u-5",
+      "nome": "Diego Prado",
+      "email": "diego@domcore.com.br",
+      "papel": "personal",
+      "unidadeId": "un-2",
+      "ativo": true
+    },
+    {
+      "id": "u-6",
+      "nome": "Beatriz Lima",
+      "email": "bia@domcore.com.br",
+      "papel": "recepcao",
+      "unidadeId": "un-2",
+      "ativo": false
+    }
+  ],
+  "planos": [
+    {
+      "id": "pl-1",
+      "nome": "Mensal",
+      "valor": 129.9,
+      "periodo_meses": 1,
+      "descricao": "Acesso livre à musculação"
+    },
+    {
+      "id": "pl-2",
+      "nome": "Trimestral",
+      "valor": 349.9,
+      "periodo_meses": 3,
+      "descricao": "Musculação + 2 aulas coletivas/semana"
+    },
+    {
+      "id": "pl-3",
+      "nome": "Anual Black",
+      "valor": 1188,
+      "periodo_meses": 12,
+      "descricao": "Acesso total + avaliação física trimestral"
+    },
+    {
+      "id": "pl-4",
+      "nome": "Student",
+      "valor": 99.9,
+      "periodo_meses": 1,
+      "descricao": "Plano estudante com comprovante"
+    }
+  ],
+  "alunos": [
+    {
+      "id": "al-1",
+      "academiaId": "ac-1",
+      "unidadeId": "un-2",
+      "nome": "Ana Beatriz Rocha",
+      "genero": "F",
+      "email": "ana.beatriz.rocha@email.com",
+      "telefone": "(41) 99677-4965",
+      "foto": "https://ui-avatars.com/api/?name=Ana%20Beatriz%20Rocha&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-4",
+      "plano": "Student",
+      "matricula": "2025-08-18",
+      "vencimento": "2026-07-24",
+      "ultima_visita": "2026-07-16",
+      "xp": 1760,
+      "streak": 16,
+      "nascimento": "2001-03-22"
+    },
+    {
+      "id": "al-2",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Bruno Carvalho",
+      "genero": "M",
+      "email": "bruno.carvalho@email.com",
+      "telefone": "(41) 97622-4386",
+      "foto": "https://ui-avatars.com/api/?name=Bruno%20Carvalho&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2025-10-09",
+      "vencimento": "2026-07-25",
+      "ultima_visita": "2026-07-17",
+      "xp": 255,
+      "streak": 2,
+      "nascimento": "2002-04-25"
+    },
+    {
+      "id": "al-3",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Carla Meneghel",
+      "genero": "F",
+      "email": "carla.meneghel@email.com",
+      "telefone": "(41) 98228-9965",
+      "foto": "https://ui-avatars.com/api/?name=Carla%20Meneghel&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-1",
+      "plano": "Mensal",
+      "matricula": "2025-10-09",
+      "vencimento": "2026-08-05",
+      "ultima_visita": "2026-07-16",
+      "xp": 1709,
+      "streak": 26,
+      "nascimento": "1991-06-11"
+    },
+    {
+      "id": "al-4",
+      "academiaId": "ac-1",
+      "unidadeId": "un-2",
+      "nome": "Daniel Prado",
+      "genero": "M",
+      "email": "daniel.prado@email.com",
+      "telefone": "(41) 96304-4095",
+      "foto": "https://ui-avatars.com/api/?name=Daniel%20Prado&background=e8410a&color=fff&bold=true",
+      "status": "inadimplente",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2026-02-18",
+      "vencimento": "2026-06-20",
+      "ultima_visita": "2026-07-02",
+      "xp": 1685,
+      "streak": 0,
+      "nascimento": "1987-10-18"
+    },
+    {
+      "id": "al-5",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Eduarda Fontes",
+      "genero": "F",
+      "email": "eduarda.fontes@email.com",
+      "telefone": "(41) 98706-5575",
+      "foto": "https://ui-avatars.com/api/?name=Eduarda%20Fontes&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-1",
+      "plano": "Mensal",
+      "matricula": "2025-12-20",
+      "vencimento": "2026-07-28",
+      "ultima_visita": "2026-07-18",
+      "xp": 1793,
+      "streak": 29,
+      "nascimento": "1995-12-03"
+    },
+    {
+      "id": "al-6",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Felipe Ramos",
+      "genero": "M",
+      "email": "felipe.ramos@email.com",
+      "telefone": "(41) 97487-8023",
+      "foto": "https://ui-avatars.com/api/?name=Felipe%20Ramos&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-4",
+      "plano": "Student",
+      "matricula": "2025-09-21",
+      "vencimento": "2026-08-16",
+      "ultima_visita": "2026-07-18",
+      "xp": 2188,
+      "streak": 21,
+      "nascimento": "1998-05-27"
+    },
+    {
+      "id": "al-7",
+      "academiaId": "ac-1",
+      "unidadeId": "un-2",
+      "nome": "Gabriela Dias",
+      "genero": "F",
+      "email": "gabriela.dias@email.com",
+      "telefone": "(41) 97636-8281",
+      "foto": "https://ui-avatars.com/api/?name=Gabriela%20Dias&background=e8410a&color=fff&bold=true",
+      "status": "trancado",
+      "planoId": "pl-3",
+      "plano": "Anual Black",
+      "matricula": "2025-10-13",
+      "vencimento": "2026-07-14",
+      "ultima_visita": "2026-05-29",
+      "xp": 1498,
+      "streak": 3,
+      "nascimento": "1998-01-22"
+    },
+    {
+      "id": "al-8",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Henrique Barros",
+      "genero": "M",
+      "email": "henrique.barros@email.com",
+      "telefone": "(41) 97566-7733",
+      "foto": "https://ui-avatars.com/api/?name=Henrique%20Barros&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2025-10-08",
+      "vencimento": "2026-07-23",
+      "ultima_visita": "2026-07-16",
+      "xp": 2065,
+      "streak": 12,
+      "nascimento": "1985-03-09"
+    },
+    {
+      "id": "al-9",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Isabela Cruz",
+      "genero": "F",
+      "email": "isabela.cruz@email.com",
+      "telefone": "(41) 96283-1400",
+      "foto": "https://ui-avatars.com/api/?name=Isabela%20Cruz&background=e8410a&color=fff&bold=true",
+      "status": "inadimplente",
+      "planoId": "pl-3",
+      "plano": "Anual Black",
+      "matricula": "2025-09-16",
+      "vencimento": "2026-07-04",
+      "ultima_visita": "2026-07-12",
+      "xp": 2666,
+      "streak": 2,
+      "nascimento": "2001-06-03"
+    },
+    {
+      "id": "al-10",
+      "academiaId": "ac-1",
+      "unidadeId": "un-2",
+      "nome": "João Vitor Lima",
+      "genero": "M",
+      "email": "jo.o.vitor.lima@email.com",
+      "telefone": "(41) 98964-8471",
+      "foto": "https://ui-avatars.com/api/?name=Jo%C3%A3o%20Vitor%20Lima&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2026-01-05",
+      "vencimento": "2026-08-15",
+      "ultima_visita": "2026-07-17",
+      "xp": 2378,
+      "streak": 31,
+      "nascimento": "1999-02-25"
+    },
+    {
+      "id": "al-11",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Karina Ferraz",
+      "genero": "F",
+      "email": "karina.ferraz@email.com",
+      "telefone": "(41) 97288-5041",
+      "foto": "https://ui-avatars.com/api/?name=Karina%20Ferraz&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-1",
+      "plano": "Mensal",
+      "matricula": "2025-11-05",
+      "vencimento": "2026-08-01",
+      "ultima_visita": "2026-07-19",
+      "xp": 345,
+      "streak": 12,
+      "nascimento": "1987-12-23"
+    },
+    {
+      "id": "al-12",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Leonardo Antunes",
+      "genero": "M",
+      "email": "leonardo.antunes@email.com",
+      "telefone": "(41) 96709-4298",
+      "foto": "https://ui-avatars.com/api/?name=Leonardo%20Antunes&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-1",
+      "plano": "Mensal",
+      "matricula": "2025-06-18",
+      "vencimento": "2026-08-17",
+      "ultima_visita": "2026-07-19",
+      "xp": 4122,
+      "streak": 5,
+      "nascimento": "1990-01-05"
+    },
+    {
+      "id": "al-13",
+      "academiaId": "ac-1",
+      "unidadeId": "un-2",
+      "nome": "Mariana Sales",
+      "genero": "F",
+      "email": "mariana.sales@email.com",
+      "telefone": "(41) 99157-5903",
+      "foto": "https://ui-avatars.com/api/?name=Mariana%20Sales&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2025-12-30",
+      "vencimento": "2026-08-17",
+      "ultima_visita": "2026-07-19",
+      "xp": 3132,
+      "streak": 14,
+      "nascimento": "2007-01-17"
+    },
+    {
+      "id": "al-14",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Nicolas Prado",
+      "genero": "M",
+      "email": "nicolas.prado@email.com",
+      "telefone": "(41) 99173-2517",
+      "foto": "https://ui-avatars.com/api/?name=Nicolas%20Prado&background=e8410a&color=fff&bold=true",
+      "status": "inadimplente",
+      "planoId": "pl-1",
+      "plano": "Mensal",
+      "matricula": "2026-01-12",
+      "vencimento": "2026-06-13",
+      "ultima_visita": "2026-07-11",
+      "xp": 957,
+      "streak": 0,
+      "nascimento": "1985-09-15"
+    },
+    {
+      "id": "al-15",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Olivia Bastos",
+      "genero": "F",
+      "email": "olivia.bastos@email.com",
+      "telefone": "(41) 96026-2631",
+      "foto": "https://ui-avatars.com/api/?name=Olivia%20Bastos&background=e8410a&color=fff&bold=true",
+      "status": "trancado",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2025-12-07",
+      "vencimento": "2026-07-16",
+      "ultima_visita": "2026-06-23",
+      "xp": 1950,
+      "streak": 2,
+      "nascimento": "1986-03-18"
+    },
+    {
+      "id": "al-16",
+      "academiaId": "ac-1",
+      "unidadeId": "un-2",
+      "nome": "Pedro Henrique Alves",
+      "genero": "M",
+      "email": "pedro.henrique.alves@email.com",
+      "telefone": "(41) 97228-5115",
+      "foto": "https://ui-avatars.com/api/?name=Pedro%20Henrique%20Alves&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-3",
+      "plano": "Anual Black",
+      "matricula": "2025-12-13",
+      "vencimento": "2026-07-28",
+      "ultima_visita": "2026-07-19",
+      "xp": 1330,
+      "streak": 15,
+      "nascimento": "1992-04-14"
+    },
+    {
+      "id": "al-17",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Queila Moraes",
+      "genero": "F",
+      "email": "queila.moraes@email.com",
+      "telefone": "(41) 98880-2025",
+      "foto": "https://ui-avatars.com/api/?name=Queila%20Moraes&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2026-03-05",
+      "vencimento": "2026-08-08",
+      "ultima_visita": "2026-07-19",
+      "xp": 918,
+      "streak": 6,
+      "nascimento": "2004-01-04"
+    },
+    {
+      "id": "al-18",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Rodrigo Teles",
+      "genero": "M",
+      "email": "rodrigo.teles@email.com",
+      "telefone": "(41) 98791-1682",
+      "foto": "https://ui-avatars.com/api/?name=Rodrigo%20Teles&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-3",
+      "plano": "Anual Black",
+      "matricula": "2025-12-19",
+      "vencimento": "2026-07-29",
+      "ultima_visita": "2026-07-17",
+      "xp": 1011,
+      "streak": 1,
+      "nascimento": "1997-04-14"
+    },
+    {
+      "id": "al-19",
+      "academiaId": "ac-1",
+      "unidadeId": "un-2",
+      "nome": "Sofia Marques",
+      "genero": "F",
+      "email": "sofia.marques@email.com",
+      "telefone": "(41) 99654-6610",
+      "foto": "https://ui-avatars.com/api/?name=Sofia%20Marques&background=e8410a&color=fff&bold=true",
+      "status": "inadimplente",
+      "planoId": "pl-1",
+      "plano": "Mensal",
+      "matricula": "2025-08-27",
+      "vencimento": "2026-06-24",
+      "ultima_visita": "2026-07-15",
+      "xp": 2357,
+      "streak": 2,
+      "nascimento": "2006-04-21"
+    },
+    {
+      "id": "al-20",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Thiago Nunes",
+      "genero": "M",
+      "email": "thiago.nunes@email.com",
+      "telefone": "(41) 97771-8691",
+      "foto": "https://ui-avatars.com/api/?name=Thiago%20Nunes&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-3",
+      "plano": "Anual Black",
+      "matricula": "2026-06-06",
+      "vencimento": "2026-07-24",
+      "ultima_visita": "2026-07-19",
+      "xp": 898,
+      "streak": 32,
+      "nascimento": "1989-02-24"
+    },
+    {
+      "id": "al-21",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Ursula Kopp",
+      "genero": "F",
+      "email": "ursula.kopp@email.com",
+      "telefone": "(41) 96699-6111",
+      "foto": "https://ui-avatars.com/api/?name=Ursula%20Kopp&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2026-01-14",
+      "vencimento": "2026-08-01",
+      "ultima_visita": "2026-07-17",
+      "xp": 1860,
+      "streak": 9,
+      "nascimento": "1992-12-06"
+    },
+    {
+      "id": "al-22",
+      "academiaId": "ac-1",
+      "unidadeId": "un-2",
+      "nome": "Vinicius Castro",
+      "genero": "M",
+      "email": "vinicius.castro@email.com",
+      "telefone": "(41) 99914-5962",
+      "foto": "https://ui-avatars.com/api/?name=Vinicius%20Castro&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-4",
+      "plano": "Student",
+      "matricula": "2025-10-21",
+      "vencimento": "2026-08-03",
+      "ultima_visita": "2026-07-18",
+      "xp": 363,
+      "streak": 0,
+      "nascimento": "1993-10-14"
+    },
+    {
+      "id": "al-23",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Wesley Prado",
+      "genero": "F",
+      "email": "wesley.prado@email.com",
+      "telefone": "(41) 96036-8780",
+      "foto": "https://ui-avatars.com/api/?name=Wesley%20Prado&background=e8410a&color=fff&bold=true",
+      "status": "trancado",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2026-01-15",
+      "vencimento": "2026-07-10",
+      "ultima_visita": "2026-05-28",
+      "xp": 2587,
+      "streak": 3,
+      "nascimento": "1986-06-24"
+    },
+    {
+      "id": "al-24",
+      "academiaId": "ac-1",
+      "unidadeId": "un-1",
+      "nome": "Yasmin Oliveira",
+      "genero": "M",
+      "email": "yasmin.oliveira@email.com",
+      "telefone": "(41) 99108-9468",
+      "foto": "https://ui-avatars.com/api/?name=Yasmin%20Oliveira&background=e8410a&color=fff&bold=true",
+      "status": "ativo",
+      "planoId": "pl-2",
+      "plano": "Trimestral",
+      "matricula": "2025-07-03",
+      "vencimento": "2026-08-14",
+      "ultima_visita": "2026-07-18",
+      "xp": 3824,
+      "streak": 20,
+      "nascimento": "1996-01-24"
+    }
+  ],
+  "contratos": [
+    {
+      "id": "ct-1",
+      "alunoId": "al-1",
+      "planoId": "pl-4",
+      "inicio": "2025-08-18",
+      "fim": "2026-08-18",
+      "status": "ativo",
+      "valor_mensal": 99.9
+    },
+    {
+      "id": "ct-2",
+      "alunoId": "al-2",
+      "planoId": "pl-2",
+      "inicio": "2025-10-09",
+      "fim": "2026-10-09",
+      "status": "ativo",
+      "valor_mensal": 349.9
+    },
+    {
+      "id": "ct-3",
+      "alunoId": "al-3",
+      "planoId": "pl-1",
+      "inicio": "2025-10-09",
+      "fim": "2026-10-09",
+      "status": "ativo",
+      "valor_mensal": 129.9
+    },
+    {
+      "id": "ct-4",
+      "alunoId": "al-4",
+      "planoId": "pl-2",
+      "inicio": "2026-02-18",
+      "fim": "2027-02-18",
+      "status": "em_atraso",
+      "valor_mensal": 349.9
+    },
+    {
+      "id": "ct-5",
+      "alunoId": "al-5",
+      "planoId": "pl-1",
+      "inicio": "2025-12-20",
+      "fim": "2026-12-20",
+      "status": "ativo",
+      "valor_mensal": 129.9
+    },
+    {
+      "id": "ct-6",
+      "alunoId": "al-6",
+      "planoId": "pl-4",
+      "inicio": "2025-09-21",
+      "fim": "2026-09-21",
+      "status": "ativo",
+      "valor_mensal": 99.9
+    },
+    {
+      "id": "ct-7",
+      "alunoId": "al-8",
+      "planoId": "pl-2",
+      "inicio": "2025-10-08",
+      "fim": "2026-10-08",
+      "status": "ativo",
+      "valor_mensal": 349.9
+    },
+    {
+      "id": "ct-8",
+      "alunoId": "al-9",
+      "planoId": "pl-3",
+      "inicio": "2025-09-16",
+      "fim": "2026-09-16",
+      "status": "em_atraso",
+      "valor_mensal": 1188
+    },
+    {
+      "id": "ct-9",
+      "alunoId": "al-10",
+      "planoId": "pl-2",
+      "inicio": "2026-01-05",
+      "fim": "2027-01-05",
+      "status": "ativo",
+      "valor_mensal": 349.9
+    },
+    {
+      "id": "ct-10",
+      "alunoId": "al-11",
+      "planoId": "pl-1",
+      "inicio": "2025-11-05",
+      "fim": "2026-11-05",
+      "status": "ativo",
+      "valor_mensal": 129.9
+    },
+    {
+      "id": "ct-11",
+      "alunoId": "al-12",
+      "planoId": "pl-1",
+      "inicio": "2025-06-18",
+      "fim": "2026-06-18",
+      "status": "ativo",
+      "valor_mensal": 129.9
+    },
+    {
+      "id": "ct-12",
+      "alunoId": "al-13",
+      "planoId": "pl-2",
+      "inicio": "2025-12-30",
+      "fim": "2026-12-30",
+      "status": "ativo",
+      "valor_mensal": 349.9
+    },
+    {
+      "id": "ct-13",
+      "alunoId": "al-14",
+      "planoId": "pl-1",
+      "inicio": "2026-01-12",
+      "fim": "2027-01-12",
+      "status": "em_atraso",
+      "valor_mensal": 129.9
+    },
+    {
+      "id": "ct-14",
+      "alunoId": "al-16",
+      "planoId": "pl-3",
+      "inicio": "2025-12-13",
+      "fim": "2026-12-13",
+      "status": "ativo",
+      "valor_mensal": 1188
+    },
+    {
+      "id": "ct-15",
+      "alunoId": "al-17",
+      "planoId": "pl-2",
+      "inicio": "2026-03-05",
+      "fim": "2027-03-05",
+      "status": "ativo",
+      "valor_mensal": 349.9
+    },
+    {
+      "id": "ct-16",
+      "alunoId": "al-18",
+      "planoId": "pl-3",
+      "inicio": "2025-12-19",
+      "fim": "2026-12-19",
+      "status": "ativo",
+      "valor_mensal": 1188
+    },
+    {
+      "id": "ct-17",
+      "alunoId": "al-19",
+      "planoId": "pl-1",
+      "inicio": "2025-08-27",
+      "fim": "2026-08-27",
+      "status": "em_atraso",
+      "valor_mensal": 129.9
+    },
+    {
+      "id": "ct-18",
+      "alunoId": "al-20",
+      "planoId": "pl-3",
+      "inicio": "2026-06-06",
+      "fim": "2027-06-06",
+      "status": "ativo",
+      "valor_mensal": 1188
+    },
+    {
+      "id": "ct-19",
+      "alunoId": "al-21",
+      "planoId": "pl-2",
+      "inicio": "2026-01-14",
+      "fim": "2027-01-14",
+      "status": "ativo",
+      "valor_mensal": 349.9
+    },
+    {
+      "id": "ct-20",
+      "alunoId": "al-22",
+      "planoId": "pl-4",
+      "inicio": "2025-10-21",
+      "fim": "2026-10-21",
+      "status": "ativo",
+      "valor_mensal": 99.9
+    },
+    {
+      "id": "ct-21",
+      "alunoId": "al-24",
+      "planoId": "pl-2",
+      "inicio": "2025-07-03",
+      "fim": "2026-07-03",
+      "status": "ativo",
+      "valor_mensal": 349.9
+    }
+  ],
+  "faturas": [
+    {
+      "id": "ft-1",
+      "alunoId": "al-4",
+      "aluno": "Daniel Prado",
+      "contratoId": "ct-4",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-20",
+      "valor": 349.9,
+      "status": "vencida",
+      "meio": "pix",
+      "pago_em": null,
+      "tentativas_cobranca": 4,
+      "ultima_tentativa": "2026-07-17"
+    },
+    {
+      "id": "ft-2",
+      "alunoId": "al-9",
+      "aluno": "Isabela Cruz",
+      "contratoId": "ct-8",
+      "competencia": "2026-07",
+      "vencimento": "2026-07-04",
+      "valor": 1188,
+      "status": "vencida",
+      "meio": "pix",
+      "pago_em": null,
+      "tentativas_cobranca": 4,
+      "ultima_tentativa": "2026-07-17"
+    },
+    {
+      "id": "ft-3",
+      "alunoId": "al-14",
+      "aluno": "Nicolas Prado",
+      "contratoId": "ct-13",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-13",
+      "valor": 129.9,
+      "status": "vencida",
+      "meio": "cartao",
+      "pago_em": null,
+      "tentativas_cobranca": 3,
+      "ultima_tentativa": "2026-07-17"
+    },
+    {
+      "id": "ft-4",
+      "alunoId": "al-19",
+      "aluno": "Sofia Marques",
+      "contratoId": "ct-17",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-24",
+      "valor": 129.9,
+      "status": "vencida",
+      "meio": "cartao",
+      "pago_em": null,
+      "tentativas_cobranca": 2,
+      "ultima_tentativa": "2026-07-18"
+    },
+    {
+      "id": "ft-5",
+      "alunoId": "al-1",
+      "aluno": "Ana Beatriz Rocha",
+      "contratoId": "ct-1",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-26",
+      "valor": 99.9,
+      "status": "paga",
+      "meio": "pix",
+      "pago_em": "2026-06-24",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-6",
+      "alunoId": "al-2",
+      "aluno": "Bruno Carvalho",
+      "contratoId": "ct-2",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-05",
+      "valor": 349.9,
+      "status": "paga",
+      "meio": "boleto",
+      "pago_em": "2026-06-05",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-7",
+      "alunoId": "al-3",
+      "aluno": "Carla Meneghel",
+      "contratoId": "ct-3",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-05",
+      "valor": 129.9,
+      "status": "paga",
+      "meio": "pix",
+      "pago_em": "2026-06-04",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-8",
+      "alunoId": "al-5",
+      "aluno": "Eduarda Fontes",
+      "contratoId": "ct-5",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-28",
+      "valor": 129.9,
+      "status": "paga",
+      "meio": "cartao",
+      "pago_em": "2026-06-25",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-9",
+      "alunoId": "al-6",
+      "aluno": "Felipe Ramos",
+      "contratoId": "ct-6",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-19",
+      "valor": 99.9,
+      "status": "paga",
+      "meio": "pix",
+      "pago_em": "2026-06-19",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-10",
+      "alunoId": "al-8",
+      "aluno": "Henrique Barros",
+      "contratoId": "ct-7",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-15",
+      "valor": 349.9,
+      "status": "paga",
+      "meio": "pix",
+      "pago_em": "2026-06-14",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-11",
+      "alunoId": "al-10",
+      "aluno": "João Vitor Lima",
+      "contratoId": "ct-9",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-09",
+      "valor": 349.9,
+      "status": "paga",
+      "meio": "boleto",
+      "pago_em": "2026-06-07",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-12",
+      "alunoId": "al-11",
+      "aluno": "Karina Ferraz",
+      "contratoId": "ct-10",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-27",
+      "valor": 129.9,
+      "status": "paga",
+      "meio": "cartao",
+      "pago_em": "2026-06-24",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-13",
+      "alunoId": "al-12",
+      "aluno": "Leonardo Antunes",
+      "contratoId": "ct-11",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-23",
+      "valor": 129.9,
+      "status": "paga",
+      "meio": "cartao",
+      "pago_em": "2026-06-23",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-14",
+      "alunoId": "al-13",
+      "aluno": "Mariana Sales",
+      "contratoId": "ct-12",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-10",
+      "valor": 349.9,
+      "status": "paga",
+      "meio": "cartao",
+      "pago_em": "2026-06-10",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-15",
+      "alunoId": "al-16",
+      "aluno": "Pedro Henrique Alves",
+      "contratoId": "ct-14",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-21",
+      "valor": 1188,
+      "status": "paga",
+      "meio": "cartao",
+      "pago_em": "2026-06-18",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-16",
+      "alunoId": "al-17",
+      "aluno": "Queila Moraes",
+      "contratoId": "ct-15",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-13",
+      "valor": 349.9,
+      "status": "paga",
+      "meio": "pix",
+      "pago_em": "2026-06-13",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-17",
+      "alunoId": "al-18",
+      "aluno": "Rodrigo Teles",
+      "contratoId": "ct-16",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-15",
+      "valor": 1188,
+      "status": "paga",
+      "meio": "cartao",
+      "pago_em": "2026-06-15",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-18",
+      "alunoId": "al-20",
+      "aluno": "Thiago Nunes",
+      "contratoId": "ct-18",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-06",
+      "valor": 1188,
+      "status": "paga",
+      "meio": "boleto",
+      "pago_em": "2026-06-04",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-19",
+      "alunoId": "al-21",
+      "aluno": "Ursula Kopp",
+      "contratoId": "ct-19",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-28",
+      "valor": 349.9,
+      "status": "paga",
+      "meio": "boleto",
+      "pago_em": "2026-06-26",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-20",
+      "alunoId": "al-22",
+      "aluno": "Vinicius Castro",
+      "contratoId": "ct-20",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-11",
+      "valor": 99.9,
+      "status": "paga",
+      "meio": "pix",
+      "pago_em": "2026-06-08",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-21",
+      "alunoId": "al-24",
+      "aluno": "Yasmin Oliveira",
+      "contratoId": "ct-21",
+      "competencia": "2026-06",
+      "vencimento": "2026-06-29",
+      "valor": 349.9,
+      "status": "paga",
+      "meio": "pix",
+      "pago_em": "2026-06-27",
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-22",
+      "alunoId": "al-1",
+      "aluno": "Ana Beatriz Rocha",
+      "contratoId": "ct-1",
+      "competencia": "2026-07",
+      "vencimento": "2026-07-24",
+      "valor": 99.9,
+      "status": "aberta",
+      "meio": "cartao",
+      "pago_em": null,
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-23",
+      "alunoId": "al-2",
+      "aluno": "Bruno Carvalho",
+      "contratoId": "ct-2",
+      "competencia": "2026-07",
+      "vencimento": "2026-07-25",
+      "valor": 349.9,
+      "status": "aberta",
+      "meio": "boleto",
+      "pago_em": null,
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-24",
+      "alunoId": "al-3",
+      "aluno": "Carla Meneghel",
+      "contratoId": "ct-3",
+      "competencia": "2026-08",
+      "vencimento": "2026-08-05",
+      "valor": 129.9,
+      "status": "aberta",
+      "meio": "boleto",
+      "pago_em": null,
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-25",
+      "alunoId": "al-5",
+      "aluno": "Eduarda Fontes",
+      "contratoId": "ct-5",
+      "competencia": "2026-07",
+      "vencimento": "2026-07-28",
+      "valor": 129.9,
+      "status": "aberta",
+      "meio": "cartao",
+      "pago_em": null,
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-26",
+      "alunoId": "al-6",
+      "aluno": "Felipe Ramos",
+      "contratoId": "ct-6",
+      "competencia": "2026-08",
+      "vencimento": "2026-08-16",
+      "valor": 99.9,
+      "status": "aberta",
+      "meio": "pix",
+      "pago_em": null,
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-27",
+      "alunoId": "al-8",
+      "aluno": "Henrique Barros",
+      "contratoId": "ct-7",
+      "competencia": "2026-07",
+      "vencimento": "2026-07-23",
+      "valor": 349.9,
+      "status": "aberta",
+      "meio": "pix",
+      "pago_em": null,
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-28",
+      "alunoId": "al-10",
+      "aluno": "João Vitor Lima",
+      "contratoId": "ct-9",
+      "competencia": "2026-08",
+      "vencimento": "2026-08-15",
+      "valor": 349.9,
+      "status": "aberta",
+      "meio": "pix",
+      "pago_em": null,
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    },
+    {
+      "id": "ft-29",
+      "alunoId": "al-11",
+      "aluno": "Karina Ferraz",
+      "contratoId": "ct-10",
+      "competencia": "2026-08",
+      "vencimento": "2026-08-01",
+      "valor": 129.9,
+      "status": "aberta",
+      "meio": "boleto",
+      "pago_em": null,
+      "tentativas_cobranca": 0,
+      "ultima_tentativa": null
+    }
+  ],
+  "acessos": [
+    {
+      "id": "ac-log-16",
+      "alunoId": "al-17",
+      "aluno": "Queila Moraes",
+      "foto": "https://ui-avatars.com/api/?name=Queila%20Moraes&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-21T01:26:00.000Z"
+    },
+    {
+      "id": "ac-log-9",
+      "alunoId": "al-8",
+      "aluno": "Henrique Barros",
+      "foto": "https://ui-avatars.com/api/?name=Henrique%20Barros&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-21T00:23:00.000Z"
+    },
+    {
+      "id": "ac-log-19",
+      "alunoId": "al-22",
+      "aluno": "Vinicius Castro",
+      "foto": "https://ui-avatars.com/api/?name=Vinicius%20Castro&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T22:18:00.000Z"
+    },
+    {
+      "id": "ac-log-3",
+      "alunoId": "al-11",
+      "aluno": "Karina Ferraz",
+      "foto": "https://ui-avatars.com/api/?name=Karina%20Ferraz&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T21:28:00.000Z"
+    },
+    {
+      "id": "ac-log-40",
+      "alunoId": "al-4",
+      "aluno": "Daniel Prado",
+      "foto": "https://ui-avatars.com/api/?name=Daniel%20Prado&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T19:20:00.000Z"
+    },
+    {
+      "id": "ac-log-24",
+      "alunoId": "al-2",
+      "aluno": "Bruno Carvalho",
+      "foto": "https://ui-avatars.com/api/?name=Bruno%20Carvalho&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T19:00:00.000Z"
+    },
+    {
+      "id": "ac-log-7",
+      "alunoId": "al-8",
+      "aluno": "Henrique Barros",
+      "foto": "https://ui-avatars.com/api/?name=Henrique%20Barros&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T18:48:00.000Z"
+    },
+    {
+      "id": "ac-log-29",
+      "alunoId": "al-16",
+      "aluno": "Pedro Henrique Alves",
+      "foto": "https://ui-avatars.com/api/?name=Pedro%20Henrique%20Alves&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T18:05:00.000Z"
+    },
+    {
+      "id": "ac-log-44",
+      "alunoId": "al-11",
+      "aluno": "Karina Ferraz",
+      "foto": "https://ui-avatars.com/api/?name=Karina%20Ferraz&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T16:00:00.000Z"
+    },
+    {
+      "id": "ac-log-37",
+      "alunoId": "al-12",
+      "aluno": "Leonardo Antunes",
+      "foto": "https://ui-avatars.com/api/?name=Leonardo%20Antunes&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T15:29:00.000Z"
+    },
+    {
+      "id": "ac-log-33",
+      "alunoId": "al-16",
+      "aluno": "Pedro Henrique Alves",
+      "foto": "https://ui-avatars.com/api/?name=Pedro%20Henrique%20Alves&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T14:32:00.000Z"
+    },
+    {
+      "id": "ac-log-28",
+      "alunoId": "al-18",
+      "aluno": "Rodrigo Teles",
+      "foto": "https://ui-avatars.com/api/?name=Rodrigo%20Teles&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T13:44:00.000Z"
+    },
+    {
+      "id": "ac-log-25",
+      "alunoId": "al-10",
+      "aluno": "João Vitor Lima",
+      "foto": "https://ui-avatars.com/api/?name=Jo%C3%A3o%20Vitor%20Lima&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T12:27:00.000Z"
+    },
+    {
+      "id": "ac-log-11",
+      "alunoId": "al-18",
+      "aluno": "Rodrigo Teles",
+      "foto": "https://ui-avatars.com/api/?name=Rodrigo%20Teles&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T11:56:00.000Z"
+    },
+    {
+      "id": "ac-log-30",
+      "alunoId": "al-2",
+      "aluno": "Bruno Carvalho",
+      "foto": "https://ui-avatars.com/api/?name=Bruno%20Carvalho&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T10:53:00.000Z"
+    },
+    {
+      "id": "ac-log-10",
+      "alunoId": "al-1",
+      "aluno": "Ana Beatriz Rocha",
+      "foto": "https://ui-avatars.com/api/?name=Ana%20Beatriz%20Rocha&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T01:45:00.000Z"
+    },
+    {
+      "id": "ac-log-31",
+      "alunoId": "al-23",
+      "aluno": "Wesley Prado",
+      "foto": "https://ui-avatars.com/api/?name=Wesley%20Prado&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-20T01:09:00.000Z"
+    },
+    {
+      "id": "ac-log-21",
+      "alunoId": "al-10",
+      "aluno": "João Vitor Lima",
+      "foto": "https://ui-avatars.com/api/?name=Jo%C3%A3o%20Vitor%20Lima&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T21:44:00.000Z"
+    },
+    {
+      "id": "ac-log-13",
+      "alunoId": "al-1",
+      "aluno": "Ana Beatriz Rocha",
+      "foto": "https://ui-avatars.com/api/?name=Ana%20Beatriz%20Rocha&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T21:36:00.000Z"
+    },
+    {
+      "id": "ac-log-36",
+      "alunoId": "al-14",
+      "aluno": "Nicolas Prado",
+      "foto": "https://ui-avatars.com/api/?name=Nicolas%20Prado&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T20:06:00.000Z"
+    },
+    {
+      "id": "ac-log-6",
+      "alunoId": "al-4",
+      "aluno": "Daniel Prado",
+      "foto": "https://ui-avatars.com/api/?name=Daniel%20Prado&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T19:29:00.000Z"
+    },
+    {
+      "id": "ac-log-8",
+      "alunoId": "al-3",
+      "aluno": "Carla Meneghel",
+      "foto": "https://ui-avatars.com/api/?name=Carla%20Meneghel&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T18:40:00.000Z"
+    },
+    {
+      "id": "ac-log-23",
+      "alunoId": "al-5",
+      "aluno": "Eduarda Fontes",
+      "foto": "https://ui-avatars.com/api/?name=Eduarda%20Fontes&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T17:20:00.000Z"
+    },
+    {
+      "id": "ac-log-18",
+      "alunoId": "al-7",
+      "aluno": "Gabriela Dias",
+      "foto": "https://ui-avatars.com/api/?name=Gabriela%20Dias&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "negado",
+      "motivo": "Fatura vencida",
+      "timestamp": "2026-07-19T17:09:00.000Z"
+    },
+    {
+      "id": "ac-log-12",
+      "alunoId": "al-9",
+      "aluno": "Isabela Cruz",
+      "foto": "https://ui-avatars.com/api/?name=Isabela%20Cruz&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T17:00:00.000Z"
+    },
+    {
+      "id": "ac-log-34",
+      "alunoId": "al-20",
+      "aluno": "Thiago Nunes",
+      "foto": "https://ui-avatars.com/api/?name=Thiago%20Nunes&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T16:48:00.000Z"
+    },
+    {
+      "id": "ac-log-39",
+      "alunoId": "al-4",
+      "aluno": "Daniel Prado",
+      "foto": "https://ui-avatars.com/api/?name=Daniel%20Prado&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "saida",
+      "resultado": "negado",
+      "motivo": "Fatura vencida",
+      "timestamp": "2026-07-19T16:47:00.000Z"
+    },
+    {
+      "id": "ac-log-14",
+      "alunoId": "al-5",
+      "aluno": "Eduarda Fontes",
+      "foto": "https://ui-avatars.com/api/?name=Eduarda%20Fontes&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T15:37:00.000Z"
+    },
+    {
+      "id": "ac-log-26",
+      "alunoId": "al-16",
+      "aluno": "Pedro Henrique Alves",
+      "foto": "https://ui-avatars.com/api/?name=Pedro%20Henrique%20Alves&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T14:05:00.000Z"
+    },
+    {
+      "id": "ac-log-27",
+      "alunoId": "al-23",
+      "aluno": "Wesley Prado",
+      "foto": "https://ui-avatars.com/api/?name=Wesley%20Prado&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T10:18:00.000Z"
+    },
+    {
+      "id": "ac-log-42",
+      "alunoId": "al-6",
+      "aluno": "Felipe Ramos",
+      "foto": "https://ui-avatars.com/api/?name=Felipe%20Ramos&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T09:37:00.000Z"
+    },
+    {
+      "id": "ac-log-1",
+      "alunoId": "al-19",
+      "aluno": "Sofia Marques",
+      "foto": "https://ui-avatars.com/api/?name=Sofia%20Marques&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "saida",
+      "resultado": "negado",
+      "motivo": "Fatura vencida",
+      "timestamp": "2026-07-19T09:37:00.000Z"
+    },
+    {
+      "id": "ac-log-17",
+      "alunoId": "al-16",
+      "aluno": "Pedro Henrique Alves",
+      "foto": "https://ui-avatars.com/api/?name=Pedro%20Henrique%20Alves&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T01:39:00.000Z"
+    },
+    {
+      "id": "ac-log-38",
+      "alunoId": "al-3",
+      "aluno": "Carla Meneghel",
+      "foto": "https://ui-avatars.com/api/?name=Carla%20Meneghel&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-19T01:29:00.000Z"
+    },
+    {
+      "id": "ac-log-5",
+      "alunoId": "al-10",
+      "aluno": "João Vitor Lima",
+      "foto": "https://ui-avatars.com/api/?name=Jo%C3%A3o%20Vitor%20Lima&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T23:27:00.000Z"
+    },
+    {
+      "id": "ac-log-2",
+      "alunoId": "al-20",
+      "aluno": "Thiago Nunes",
+      "foto": "https://ui-avatars.com/api/?name=Thiago%20Nunes&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T22:35:00.000Z"
+    },
+    {
+      "id": "ac-log-41",
+      "alunoId": "al-12",
+      "aluno": "Leonardo Antunes",
+      "foto": "https://ui-avatars.com/api/?name=Leonardo%20Antunes&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T20:16:00.000Z"
+    },
+    {
+      "id": "ac-log-43",
+      "alunoId": "al-15",
+      "aluno": "Olivia Bastos",
+      "foto": "https://ui-avatars.com/api/?name=Olivia%20Bastos&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "saida",
+      "resultado": "negado",
+      "motivo": "Biometria não reconhecida",
+      "timestamp": "2026-07-18T17:17:00.000Z"
+    },
+    {
+      "id": "ac-log-4",
+      "alunoId": "al-17",
+      "aluno": "Queila Moraes",
+      "foto": "https://ui-avatars.com/api/?name=Queila%20Moraes&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T17:01:00.000Z"
+    },
+    {
+      "id": "ac-log-32",
+      "alunoId": "al-3",
+      "aluno": "Carla Meneghel",
+      "foto": "https://ui-avatars.com/api/?name=Carla%20Meneghel&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T16:46:00.000Z"
+    },
+    {
+      "id": "ac-log-35",
+      "alunoId": "al-15",
+      "aluno": "Olivia Bastos",
+      "foto": "https://ui-avatars.com/api/?name=Olivia%20Bastos&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "saida",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T15:00:00.000Z"
+    },
+    {
+      "id": "ac-log-22",
+      "alunoId": "al-8",
+      "aluno": "Henrique Barros",
+      "foto": "https://ui-avatars.com/api/?name=Henrique%20Barros&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T12:15:00.000Z"
+    },
+    {
+      "id": "ac-log-15",
+      "alunoId": "al-6",
+      "aluno": "Felipe Ramos",
+      "foto": "https://ui-avatars.com/api/?name=Felipe%20Ramos&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-1",
+      "terminal": "Catraca Centro 02",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T11:22:00.000Z"
+    },
+    {
+      "id": "ac-log-20",
+      "alunoId": "al-7",
+      "aluno": "Gabriela Dias",
+      "foto": "https://ui-avatars.com/api/?name=Gabriela%20Dias&background=e8410a&color=fff&bold=true",
+      "unidadeId": "un-2",
+      "terminal": "Catraca Batel 01",
+      "sentido": "entrada",
+      "resultado": "liberado",
+      "motivo": null,
+      "timestamp": "2026-07-18T09:54:00.000Z"
+    }
+  ],
+  "aulas": [
+    {
+      "id": "au-1",
+      "nome": "Spinning",
+      "professor": "Rafael Souza",
+      "unidadeId": "un-1",
+      "dia": "Seg",
+      "hora": "07:00",
+      "vagas": 20,
+      "inscritos": 18
+    },
+    {
+      "id": "au-2",
+      "nome": "Funcional",
+      "professor": "Rafael Souza",
+      "unidadeId": "un-1",
+      "dia": "Seg",
+      "hora": "19:00",
+      "vagas": 24,
+      "inscritos": 24
+    },
+    {
+      "id": "au-3",
+      "nome": "Yoga",
+      "professor": "Camila Nunes",
+      "unidadeId": "un-2",
+      "dia": "Ter",
+      "hora": "08:00",
+      "vagas": 15,
+      "inscritos": 11
+    },
+    {
+      "id": "au-4",
+      "nome": "Cross DomCore",
+      "professor": "Diego Prado",
+      "unidadeId": "un-2",
+      "dia": "Qua",
+      "hora": "18:30",
+      "vagas": 16,
+      "inscritos": 16
+    },
+    {
+      "id": "au-5",
+      "nome": "Muay Thai",
+      "professor": "Diego Prado",
+      "unidadeId": "un-1",
+      "dia": "Qui",
+      "hora": "20:00",
+      "vagas": 22,
+      "inscritos": 14
+    },
+    {
+      "id": "au-6",
+      "nome": "Pilates",
+      "professor": "Camila Nunes",
+      "unidadeId": "un-1",
+      "dia": "Sex",
+      "hora": "09:00",
+      "vagas": 12,
+      "inscritos": 12
+    },
+    {
+      "id": "au-7",
+      "nome": "Zumba",
+      "professor": "Marina Alves",
+      "unidadeId": "un-2",
+      "dia": "Sex",
+      "hora": "19:00",
+      "vagas": 30,
+      "inscritos": 27
+    },
+    {
+      "id": "au-8",
+      "nome": "Alongamento",
+      "professor": "Rafael Souza",
+      "unidadeId": "un-1",
+      "dia": "Sáb",
+      "hora": "10:00",
+      "vagas": 20,
+      "inscritos": 9
+    }
+  ],
+  "exercicios": [
+    {
+      "id": "ex-1",
+      "nome": "Supino reto",
+      "grupo": "Peito",
+      "equipamento": "Barra"
+    },
+    {
+      "id": "ex-2",
+      "nome": "Agachamento livre",
+      "grupo": "Pernas",
+      "equipamento": "Barra"
+    },
+    {
+      "id": "ex-3",
+      "nome": "Puxada frente",
+      "grupo": "Costas",
+      "equipamento": "Polia"
+    },
+    {
+      "id": "ex-4",
+      "nome": "Rosca direta",
+      "grupo": "Bíceps",
+      "equipamento": "Halter"
+    },
+    {
+      "id": "ex-5",
+      "nome": "Tríceps corda",
+      "grupo": "Tríceps",
+      "equipamento": "Polia"
+    },
+    {
+      "id": "ex-6",
+      "nome": "Leg press 45",
+      "grupo": "Pernas",
+      "equipamento": "Máquina"
+    },
+    {
+      "id": "ex-7",
+      "nome": "Desenvolvimento",
+      "grupo": "Ombro",
+      "equipamento": "Halter"
+    },
+    {
+      "id": "ex-8",
+      "nome": "Prancha",
+      "grupo": "Core",
+      "equipamento": "Livre"
+    }
+  ],
+  "fichas": [
+    {
+      "id": "fi-1",
+      "alunoId": "al-1",
+      "nome": "Full Body A",
+      "objetivo": "hipertrofia",
+      "professor": "Rafael Souza",
+      "itens": [
+        {
+          "exercicioId": "ex-1",
+          "series": 4,
+          "reps": "10",
+          "carga_kg": 40
+        },
+        {
+          "exercicioId": "ex-2",
+          "series": 4,
+          "reps": "12",
+          "carga_kg": 60
+        },
+        {
+          "exercicioId": "ex-3",
+          "series": 3,
+          "reps": "12",
+          "carga_kg": 45
+        }
+      ]
+    },
+    {
+      "id": "fi-2",
+      "alunoId": "al-2",
+      "nome": "Superior B",
+      "objetivo": "força",
+      "professor": "Diego Prado",
+      "itens": [
+        {
+          "exercicioId": "ex-1",
+          "series": 5,
+          "reps": "5",
+          "carga_kg": 70
+        },
+        {
+          "exercicioId": "ex-7",
+          "series": 4,
+          "reps": "8",
+          "carga_kg": 16
+        },
+        {
+          "exercicioId": "ex-4",
+          "series": 3,
+          "reps": "10",
+          "carga_kg": 14
+        }
+      ]
+    }
+  ],
+  "recompensas": [
+    {
+      "id": "rw-1",
+      "nome": "Camiseta DomCore",
+      "custo_xp": 2500,
+      "estoque": 30,
+      "categoria": "produto"
+    },
+    {
+      "id": "rw-2",
+      "nome": "1 mês grátis",
+      "custo_xp": 8000,
+      "estoque": 5,
+      "categoria": "beneficio"
+    },
+    {
+      "id": "rw-3",
+      "nome": "Avaliação física extra",
+      "custo_xp": 1200,
+      "estoque": 50,
+      "categoria": "servico"
+    },
+    {
+      "id": "rw-4",
+      "nome": "Garrafa térmica",
+      "custo_xp": 1800,
+      "estoque": 40,
+      "categoria": "produto"
+    },
+    {
+      "id": "rw-5",
+      "nome": "Aula com personal",
+      "custo_xp": 3000,
+      "estoque": 20,
+      "categoria": "servico"
+    }
+  ],
+  "ranking": [
+    {
+      "id": "rk-1",
+      "posicao": 1,
+      "alunoId": "al-12",
+      "nome": "Leonardo Antunes",
+      "xp": 4122,
+      "streak": 5
+    },
+    {
+      "id": "rk-2",
+      "posicao": 2,
+      "alunoId": "al-24",
+      "nome": "Yasmin Oliveira",
+      "xp": 3824,
+      "streak": 20
+    },
+    {
+      "id": "rk-3",
+      "posicao": 3,
+      "alunoId": "al-13",
+      "nome": "Mariana Sales",
+      "xp": 3132,
+      "streak": 14
+    },
+    {
+      "id": "rk-4",
+      "posicao": 4,
+      "alunoId": "al-9",
+      "nome": "Isabela Cruz",
+      "xp": 2666,
+      "streak": 2
+    },
+    {
+      "id": "rk-5",
+      "posicao": 5,
+      "alunoId": "al-23",
+      "nome": "Wesley Prado",
+      "xp": 2587,
+      "streak": 3
+    },
+    {
+      "id": "rk-6",
+      "posicao": 6,
+      "alunoId": "al-10",
+      "nome": "João Vitor Lima",
+      "xp": 2378,
+      "streak": 31
+    },
+    {
+      "id": "rk-7",
+      "posicao": 7,
+      "alunoId": "al-19",
+      "nome": "Sofia Marques",
+      "xp": 2357,
+      "streak": 2
+    },
+    {
+      "id": "rk-8",
+      "posicao": 8,
+      "alunoId": "al-6",
+      "nome": "Felipe Ramos",
+      "xp": 2188,
+      "streak": 21
+    }
+  ],
+  "profissionais": [
+    {
+      "id": "pr-1",
+      "nome": "Rafael Souza",
+      "papel": "Personal",
+      "cref": "CREF 012345-G/PR",
+      "unidadeId": "un-1",
+      "alunos_ativos": 34,
+      "foto": "https://ui-avatars.com/api/?name=Rafael%20Souza&background=e8410a&color=fff&bold=true"
+    },
+    {
+      "id": "pr-2",
+      "nome": "Camila Nunes",
+      "papel": "Nutricionista",
+      "cref": "CRN 45678",
+      "unidadeId": "un-2",
+      "alunos_ativos": 22,
+      "foto": "https://ui-avatars.com/api/?name=Camila%20Nunes&background=e8410a&color=fff&bold=true"
+    },
+    {
+      "id": "pr-3",
+      "nome": "Diego Prado",
+      "papel": "Personal",
+      "cref": "CREF 067890-G/PR",
+      "unidadeId": "un-2",
+      "alunos_ativos": 28,
+      "foto": "https://ui-avatars.com/api/?name=Diego%20Prado&background=e8410a&color=fff&bold=true"
+    }
+  ],
+  "dashboard": [
+    {
+      "id": "atual",
+      "kpis": {
+        "alunosAtivos": 17,
+        "alunosAtivosDelta": "+6%",
+        "checkinsHoje": 56,
+        "inadimplentes": 4,
+        "aReceber": 3436.9,
+        "novosNoMes": 12,
+        "novosNoMesDelta": "+3",
+        "ocupacaoPct": 68
+      },
+      "frequenciaSemana": [
+        {
+          "dia": "Seg",
+          "entradas": 92
+        },
+        {
+          "dia": "Ter",
+          "entradas": 108
+        },
+        {
+          "dia": "Qua",
+          "entradas": 97
+        },
+        {
+          "dia": "Qui",
+          "entradas": 121
+        },
+        {
+          "dia": "Sex",
+          "entradas": 134
+        },
+        {
+          "dia": "Sáb",
+          "entradas": 76
+        },
+        {
+          "dia": "Dom",
+          "entradas": 38
+        }
+      ],
+      "receitaMes": {
+        "total": 15432.6,
+        "meta": 42000
+      },
+      "ranking": [
+        {
+          "posicao": 1,
+          "alunoId": "al-12",
+          "nome": "Leonardo Antunes",
+          "xp": 4122,
+          "streak": 5
+        },
+        {
+          "posicao": 2,
+          "alunoId": "al-24",
+          "nome": "Yasmin Oliveira",
+          "xp": 3824,
+          "streak": 20
+        },
+        {
+          "posicao": 3,
+          "alunoId": "al-13",
+          "nome": "Mariana Sales",
+          "xp": 3132,
+          "streak": 14
+        },
+        {
+          "posicao": 4,
+          "alunoId": "al-9",
+          "nome": "Isabela Cruz",
+          "xp": 2666,
+          "streak": 2
+        },
+        {
+          "posicao": 5,
+          "alunoId": "al-23",
+          "nome": "Wesley Prado",
+          "xp": 2587,
+          "streak": 3
+        }
+      ],
+      "pendencias": [
+        {
+          "tipo": "inadimplencia",
+          "titulo": "Alunos inadimplentes para cobrar",
+          "quantidade": 4
+        },
+        {
+          "tipo": "renovacao",
+          "titulo": "Contratos vencendo em 7 dias",
+          "quantidade": 6
+        },
+        {
+          "tipo": "aniversario",
+          "titulo": "Aniversariantes da semana",
+          "quantidade": 4
+        },
+        {
+          "tipo": "avaliacao",
+          "titulo": "Avaliações físicas pendentes",
+          "quantidade": 9
+        }
+      ]
+    }
+  ],
+  "planos_alimentares": [
+    {
+      "id": "pa-1",
+      "alunoId": "al-1",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 1800, "proteina": 120, "carbo": 180, "gordura": 55 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "07:00",
+          "itens": ["Ovos mexidos (3 un)", "Pão integral (2 fatias)", "Mamão (1 fatia)"],
+          "kcal": 420,
+          "proteina": 26,
+          "carbo": 42,
+          "gordura": 15,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:30",
+          "itens": ["Frango grelhado (150g)", "Arroz integral (4 c.sopa)", "Salada verde", "Feijão (1 concha)"],
+          "kcal": 620,
+          "proteina": 48,
+          "carbo": 65,
+          "gordura": 16,
+          "feito": true
+        },
+        {
+          "nome": "Lanche da tarde",
+          "horario": "16:00",
+          "itens": ["Iogurte natural", "Granola (30g)", "Banana"],
+          "kcal": 320,
+          "proteina": 18,
+          "carbo": 45,
+          "gordura": 9,
+          "feito": false
+        },
+        {
+          "nome": "Jantar",
+          "horario": "20:00",
+          "itens": ["Omelete (2 ovos)", "Legumes no vapor", "Batata doce (100g)"],
+          "kcal": 440,
+          "proteina": 28,
+          "carbo": 28,
+          "gordura": 15,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Foco em manutenção de massa magra. Aumentar hidratação para 2,5L/dia."
+    },
+    {
+      "id": "pa-2",
+      "alunoId": "al-2",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 2600, "proteina": 180, "carbo": 300, "gordura": 70 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "06:30",
+          "itens": ["Aveia (60g)", "Whey protein (1 scoop)", "Pasta de amendoim (1 c.sopa)"],
+          "kcal": 560,
+          "proteina": 42,
+          "carbo": 58,
+          "gordura": 18,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:00",
+          "itens": ["Patinho moído (180g)", "Arroz branco (6 c.sopa)", "Brócolis"],
+          "kcal": 780,
+          "proteina": 55,
+          "carbo": 90,
+          "gordura": 18,
+          "feito": true
+        },
+        {
+          "nome": "Pré-treino",
+          "horario": "17:00",
+          "itens": ["Batata doce (150g)", "Frango desfiado (100g)"],
+          "kcal": 380,
+          "proteina": 30,
+          "carbo": 50,
+          "gordura": 6,
+          "feito": false
+        },
+        {
+          "nome": "Jantar",
+          "horario": "21:00",
+          "itens": ["Salmão (150g)", "Quinoa (4 c.sopa)", "Aspargos"],
+          "kcal": 620,
+          "proteina": 45,
+          "carbo": 55,
+          "gordura": 22,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Bulking limpo. Priorizar carboidratos peri-treino."
+    },
+    {
+      "id": "pa-3",
+      "alunoId": "al-3",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 1500, "proteina": 110, "carbo": 130, "gordura": 50 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "07:30",
+          "itens": ["Tapioca (2 c.sopa)", "Ovo (2 un)", "Café sem açúcar"],
+          "kcal": 340,
+          "proteina": 20,
+          "carbo": 35,
+          "gordura": 12,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "13:00",
+          "itens": ["Tilápia (150g)", "Arroz integral (3 c.sopa)", "Salada colorida"],
+          "kcal": 480,
+          "proteina": 42,
+          "carbo": 45,
+          "gordura": 12,
+          "feito": false
+        },
+        {
+          "nome": "Lanche",
+          "horario": "16:30",
+          "itens": ["Queijo cottage (100g)", "Torrada integral"],
+          "kcal": 220,
+          "proteina": 20,
+          "carbo": 22,
+          "gordura": 6,
+          "feito": false
+        },
+        {
+          "nome": "Jantar",
+          "horario": "20:00",
+          "itens": ["Sopa de legumes", "Peito de frango (120g)"],
+          "kcal": 380,
+          "proteina": 32,
+          "carbo": 28,
+          "gordura": 14,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Déficit calórico moderado para recomposição. Evitar açúcar refinado."
+    },
+    {
+      "id": "pa-4",
+      "alunoId": "al-4",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 2200, "proteina": 150, "carbo": 240, "gordura": 65 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "07:00",
+          "itens": ["Crepioca", "Frango desfiado (80g)", "Suco de laranja"],
+          "kcal": 420,
+          "proteina": 32,
+          "carbo": 48,
+          "gordura": 10,
+          "feito": false
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:30",
+          "itens": ["Carne magra (150g)", "Macarrão integral", "Legumes"],
+          "kcal": 680,
+          "proteina": 48,
+          "carbo": 78,
+          "gordura": 18,
+          "feito": false
+        },
+        {
+          "nome": "Lanche da tarde",
+          "horario": "16:00",
+          "itens": ["Vitamina de banana com whey"],
+          "kcal": 340,
+          "proteina": 30,
+          "carbo": 40,
+          "gordura": 6,
+          "feito": false
+        },
+        {
+          "nome": "Jantar",
+          "horario": "20:30",
+          "itens": ["Wrap de frango", "Salada"],
+          "kcal": 480,
+          "proteina": 38,
+          "carbo": 40,
+          "gordura": 18,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Aluno com baixa adesão. Reforçar acompanhamento semanal."
+    },
+    {
+      "id": "pa-5",
+      "alunoId": "al-5",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 1650, "proteina": 115, "carbo": 160, "gordura": 52 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "06:45",
+          "itens": ["Panqueca de aveia", "Frutas vermelhas", "Chá verde"],
+          "kcal": 360,
+          "proteina": 22,
+          "carbo": 44,
+          "gordura": 10,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:00",
+          "itens": ["Frango grelhado (140g)", "Arroz 7 grãos", "Brócolis e cenoura"],
+          "kcal": 540,
+          "proteina": 44,
+          "carbo": 52,
+          "gordura": 14,
+          "feito": true
+        },
+        {
+          "nome": "Lanche",
+          "horario": "16:00",
+          "itens": ["Mix de castanhas (30g)", "Maçã"],
+          "kcal": 260,
+          "proteina": 8,
+          "carbo": 26,
+          "gordura": 15,
+          "feito": true
+        },
+        {
+          "nome": "Jantar",
+          "horario": "19:30",
+          "itens": ["Omelete de claras", "Salada de folhas", "Batata doce (80g)"],
+          "kcal": 380,
+          "proteina": 30,
+          "carbo": 30,
+          "gordura": 12,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Excelente adesão. Manter estratégia atual."
+    },
+    {
+      "id": "pa-6",
+      "alunoId": "al-6",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 2000, "proteina": 140, "carbo": 210, "gordura": 60 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "07:00",
+          "itens": ["Pão integral (2 fatias)", "Ovo mexido (2 un)", "Abacate"],
+          "kcal": 440,
+          "proteina": 24,
+          "carbo": 40,
+          "gordura": 20,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:30",
+          "itens": ["Frango (150g)", "Arroz integral", "Feijão", "Salada"],
+          "kcal": 620,
+          "proteina": 48,
+          "carbo": 68,
+          "gordura": 16,
+          "feito": false
+        },
+        {
+          "nome": "Pré-treino",
+          "horario": "17:30",
+          "itens": ["Banana", "Aveia (30g)", "Café"],
+          "kcal": 260,
+          "proteina": 8,
+          "carbo": 50,
+          "gordura": 4,
+          "feito": false
+        },
+        {
+          "nome": "Jantar",
+          "horario": "21:00",
+          "itens": ["Carne magra (150g)", "Purê de batata doce", "Legumes"],
+          "kcal": 540,
+          "proteina": 44,
+          "carbo": 48,
+          "gordura": 18,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Estudante ativo. Ajustar refeições ao horário das aulas."
+    },
+    {
+      "id": "pa-7",
+      "alunoId": "al-8",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 2400, "proteina": 170, "carbo": 260, "gordura": 68 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "06:00",
+          "itens": ["Ovos (4 un)", "Pão integral (2 fatias)", "Mamão"],
+          "kcal": 520,
+          "proteina": 34,
+          "carbo": 46,
+          "gordura": 20,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:00",
+          "itens": ["Alcatra (180g)", "Arroz branco", "Feijão", "Legumes"],
+          "kcal": 760,
+          "proteina": 56,
+          "carbo": 82,
+          "gordura": 20,
+          "feito": true
+        },
+        {
+          "nome": "Lanche",
+          "horario": "16:00",
+          "itens": ["Sanduíche de atum", "Iogurte"],
+          "kcal": 420,
+          "proteina": 34,
+          "carbo": 40,
+          "gordura": 12,
+          "feito": false
+        },
+        {
+          "nome": "Jantar",
+          "horario": "20:30",
+          "itens": ["Frango (150g)", "Batata doce (150g)", "Brócolis"],
+          "kcal": 520,
+          "proteina": 46,
+          "carbo": 52,
+          "gordura": 12,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Manutenção de performance. Boa constância nos treinos."
+    },
+    {
+      "id": "pa-8",
+      "alunoId": "al-10",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 2500, "proteina": 175, "carbo": 280, "gordura": 70 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "06:30",
+          "itens": ["Aveia (50g)", "Whey (1 scoop)", "Banana", "Pasta de amendoim"],
+          "kcal": 580,
+          "proteina": 44,
+          "carbo": 62,
+          "gordura": 18,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:30",
+          "itens": ["Frango (180g)", "Arroz integral (6 c.sopa)", "Salada"],
+          "kcal": 720,
+          "proteina": 58,
+          "carbo": 84,
+          "gordura": 16,
+          "feito": true
+        },
+        {
+          "nome": "Pré-treino",
+          "horario": "18:00",
+          "itens": ["Batata doce (150g)", "Ovo (2 un)"],
+          "kcal": 340,
+          "proteina": 18,
+          "carbo": 48,
+          "gordura": 10,
+          "feito": true
+        },
+        {
+          "nome": "Jantar",
+          "horario": "21:30",
+          "itens": ["Salmão (150g)", "Quinoa", "Legumes salteados"],
+          "kcal": 620,
+          "proteina": 44,
+          "carbo": 56,
+          "gordura": 24,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Streak alto e ótima disciplina. Progredir carga gradualmente."
+    },
+    {
+      "id": "pa-9",
+      "alunoId": "al-13",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 1700, "proteina": 120, "carbo": 175, "gordura": 50 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "07:15",
+          "itens": ["Iogurte grego", "Granola", "Frutas vermelhas"],
+          "kcal": 340,
+          "proteina": 22,
+          "carbo": 42,
+          "gordura": 9,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:30",
+          "itens": ["Peixe grelhado (150g)", "Arroz integral", "Salada verde"],
+          "kcal": 500,
+          "proteina": 42,
+          "carbo": 48,
+          "gordura": 12,
+          "feito": true
+        },
+        {
+          "nome": "Lanche",
+          "horario": "16:00",
+          "itens": ["Ovo cozido (2 un)", "Torrada integral"],
+          "kcal": 240,
+          "proteina": 18,
+          "carbo": 20,
+          "gordura": 10,
+          "feito": false
+        },
+        {
+          "nome": "Jantar",
+          "horario": "20:00",
+          "itens": ["Frango (130g)", "Legumes no vapor", "Batata doce (80g)"],
+          "kcal": 420,
+          "proteina": 36,
+          "carbo": 34,
+          "gordura": 14,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Atleta jovem. Atenção à ingestão de cálcio e ferro."
+    },
+    {
+      "id": "pa-10",
+      "alunoId": "al-16",
+      "nutriId": "pr-2",
+      "metas": { "kcal": 2100, "proteina": 145, "carbo": 220, "gordura": 62 },
+      "refeicoes": [
+        {
+          "nome": "Café da manhã",
+          "horario": "07:00",
+          "itens": ["Crepioca com queijo", "Café", "Suco verde"],
+          "kcal": 400,
+          "proteina": 26,
+          "carbo": 40,
+          "gordura": 14,
+          "feito": true
+        },
+        {
+          "nome": "Almoço",
+          "horario": "12:00",
+          "itens": ["Carne (150g)", "Arroz integral", "Feijão", "Salada"],
+          "kcal": 640,
+          "proteina": 48,
+          "carbo": 70,
+          "gordura": 16,
+          "feito": false
+        },
+        {
+          "nome": "Lanche da tarde",
+          "horario": "16:30",
+          "itens": ["Shake de whey", "Castanhas (20g)"],
+          "kcal": 320,
+          "proteina": 30,
+          "carbo": 18,
+          "gordura": 14,
+          "feito": false
+        },
+        {
+          "nome": "Jantar",
+          "horario": "20:30",
+          "itens": ["Frango (150g)", "Arroz (3 c.sopa)", "Legumes"],
+          "kcal": 500,
+          "proteina": 42,
+          "carbo": 46,
+          "gordura": 16,
+          "feito": false
+        }
+      ],
+      "notaNutri": "Plano Anual Black. Incluir avaliação física trimestral no acompanhamento."
+    }
+  ],
+  "conquistas": [
+    {
+      "id": "cq-1",
+      "titulo": "Primeiro Treino",
+      "descricao": "Complete seu primeiro treino no DomCore.",
+      "icone": "Dumbbell",
+      "criterio": "treinos >= 1"
+    },
+    {
+      "id": "cq-2",
+      "titulo": "Semana Perfeita",
+      "descricao": "Mantenha um streak de 7 dias consecutivos.",
+      "icone": "Flame",
+      "criterio": "streak >= 7"
+    },
+    {
+      "id": "cq-3",
+      "titulo": "Duas Semanas de Fogo",
+      "descricao": "Alcance 14 dias seguidos de treino.",
+      "icone": "CalendarCheck",
+      "criterio": "streak >= 14"
+    },
+    {
+      "id": "cq-4",
+      "titulo": "Mês Imparável",
+      "descricao": "Chegue a 30 dias de streak sem falhar.",
+      "icone": "Trophy",
+      "criterio": "streak >= 30"
+    },
+    {
+      "id": "cq-5",
+      "titulo": "Colecionador de XP",
+      "descricao": "Acumule 2000 pontos de experiência.",
+      "icone": "Star",
+      "criterio": "xp >= 2000"
+    },
+    {
+      "id": "cq-6",
+      "titulo": "Lenda DomCore",
+      "descricao": "Ultrapasse a marca de 4000 XP.",
+      "icone": "Crown",
+      "criterio": "xp >= 4000"
+    },
+    {
+      "id": "cq-7",
+      "titulo": "Madrugador",
+      "descricao": "Faça check-in antes das 07h em 5 dias.",
+      "icone": "Sunrise",
+      "criterio": "checkins_manha >= 5"
+    },
+    {
+      "id": "cq-8",
+      "titulo": "Nutrição em Dia",
+      "descricao": "Cumpra todas as refeições do plano por 7 dias.",
+      "icone": "Salad",
+      "criterio": "dias_dieta_completa >= 7"
+    }
+  ],
+  "gamificacao_config": {
+    "id": "atual",
+    "xpPorTreino": 50,
+    "foguinhosPorTreino": 1,
+    "bonusStreak": 10,
+    "marcos": [7, 14, 30, 60],
+    "catalogoResgatavel": true
+  }
+}

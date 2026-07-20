@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================================================
+   Tokens DomCore — tema claro (default para telas densas)
+   =========================================================== */
+:root {
+  --dc-bg: #faf9f5;
+  --dc-surface: #ffffff;
+  --dc-card: #ffffff;
+  --dc-card-alt: #f2f0ea;
+  --dc-nav: #ffffff;
+  --dc-border: #e8e6e0;
+  --dc-text-strong: #1a1a1a;
+  --dc-text-muted: #5b6472;
+  --dc-text-faint: #9aa1ab;
+}
+
+/* Tema escuro (via classe .dark no <html>, darkMode: "class") */
+.dark {
+  --dc-bg: #0a0a0a;
+  --dc-surface: #111111;
+  --dc-card: #1a1a1a;
+  --dc-card-alt: #232424;
+  --dc-nav: #252726;
+  --dc-border: #2d2f31;
+  --dc-text-strong: #ffffff;
+  --dc-text-muted: #dddddd;
+  --dc-text-faint: #9b9b9b;
+}
+
+html,
+body {
+  background-color: var(--dc-bg);
+  color: var(--dc-text-strong);
+}
+
+body {
+  font-family: var(--font-barlow), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Números e títulos em Bebas Neue */
+.font-display {
+  font-family: var(--font-bebas), Impact, sans-serif;
+}
+
+/* Scrollbar discreta */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dc-border);
+  border-radius: 9999px;
+}
