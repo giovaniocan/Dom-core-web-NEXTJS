@@ -3,10 +3,14 @@
 import { Search, ChevronDown, Bell } from "lucide-react";
 import { Avatar } from "@/shared/ui/Avatar";
 import { ThemeToggle } from "./ThemeToggle";
+import { MobileNav } from "./MobileNav";
 
 export function Topbar() {
   return (
-    <header className="sticky top-0 z-30 flex h-16 items-center gap-4 border-b border-border bg-surface/80 px-5 backdrop-blur">
+    <header className="sticky top-0 z-30 flex h-16 items-center gap-3 border-b border-border bg-surface/80 px-5 backdrop-blur">
+      {/* Menu mobile (hamburguer + drawer) — some no desktop */}
+      <MobileNav />
+
       {/* Busca */}
       <div className="relative flex-1 max-w-md">
         <Search
