@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { SidebarNav } from "./SidebarNav";
@@ -12,7 +13,13 @@ import { SidebarNav } from "./SidebarNav";
  */
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  // Portal só depois de montar no cliente (evita mismatch de hidratação SSR).
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   // Fecha ao navegar para outra rota.
   useEffect(() => {
@@ -46,8 +53,10 @@ export function MobileNav() {
         <Menu size={18} />
       </button>
 
-      {open && (
-        <div className="fixed inset-0 z-50 lg:hidden">
+      {mounted &&
+        open &&
+        createPortal(
+          <div className="fixed inset-0 z-[60] lg:hidden">
           {/* Backdrop */}
           <div
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
@@ -71,8 +80,9 @@ export function MobileNav() {
             </button>
             <SidebarNav onNavigate={() => setOpen(false)} />
           </div>
-        </div>
-      )}
+        </div>,
+          document.body,
+        )}
     </>
   );
 }
